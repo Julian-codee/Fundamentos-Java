@@ -9,7 +9,7 @@ public class Main {
     public static int operacion1(){
         int x = (int) 5.89 + (int) 3.45;
 
-        System.out.println("El resultado es: " + x);
+        System.out.println("Casteo Ejercicio 1: " + x);
         return x;
     }
 
@@ -17,7 +17,7 @@ public class Main {
         char c = 'A';
         int entero = (int)c;
 
-        System.out.println("Su valor ASCII Es: " + entero);
+        System.out.println("Casteo Ejercicio 2: " + entero);
         return entero;
     }
 
@@ -25,24 +25,27 @@ public class Main {
         double d = 100.04;
         long l = (long)d;
         int i = (int)l;
-        System.out.println(i);
+        System.out.println("Casteo Ejercicio 3: " +i);
         return i;
     }
 
     public static int operacion4(){
         String text = "28";
         int number = Integer.parseInt(text);
+        System.out.println("Casteo Ejercicio 4: " + number);
         return number;
     }
 
     public static  int operacion5(){
         int result = (int) (char) (byte) -1;
+        System.out.println("Casteo Ejercicio 5: " + result);
         return result;
     }
 
     public static char operacion6(){
         int num = 65;
         char letter = (char)65;
+        System.out.println("Casteo Ejercicio 6: " + letter);
         return letter;
     }
 
@@ -57,17 +60,20 @@ public class Main {
     public static float operacion8(){
         float num2 = 300;
         String text2 = String.valueOf(num2);
+        System.out.println("Casteo Ejercicio 8: " + num2);
         return num2;
     }
 
     public static int operacion9(){
         int x = (int) Math.round(3.7);
+        System.out.println("Casteo Ejercicio 9: " +x);
         return x;
     }
 
     public static int operacion10(){
         byte b = 50;
         short a = (short)b;
+        System.out.println("Casteo Ejercicio 10: " +a);
         return a;
     }
 
@@ -76,6 +82,7 @@ public class Main {
     public static int operacion11(){
         int x = 10;
         x += 5;
+        System.out.println("Asignacion Ejercicio 1: " +x);
         return x;
     }
 
@@ -83,12 +90,14 @@ public class Main {
         int y = 4;
         int x = 2;
         int resultado = y * (x + 5);
+        System.out.println("Asignacion Ejercicio 2: " + resultado);
         return resultado;
     }
 
     public static int operacion13(){
         int a = 15;
         a %= 4;
+        System.out.println("Asignacion Ejercicio 3: " +a);
         return a;
     }
 
@@ -96,12 +105,14 @@ public class Main {
         int x = 12;
         int y = 3;
         int s = x += y;
+        System.out.println("Asignacion Ejercicio 4: " +s);
         return s;
     }
 
     public static int operacion15(){
         int x = 4;
         int result = x ^= 2;
+        System.out.println("Asignacion Ejercicio 5: " +result);
         return result;
     }
 
@@ -109,11 +120,13 @@ public class Main {
 
     public static int operacion16(){
         int x = 5; int y = ++x;
+        System.out.println("Incremento y Decremento Ejercicio 1: " +y);
         return y;
     }
 
     public static int operacion17(){
         int a = 5; System.out.println(a++); System.out.println(a);
+        System.out.println("Incremento y Decremento Ejercicio 2: " +a);
         return a;
     }
 
@@ -144,6 +157,7 @@ public class Main {
 
     public static int operacion20(){
         int x = 3; x = x++;
+        System.out.println("Incremento y Decremento Ejercicio 5: " +x);
         return x;
     }
 
